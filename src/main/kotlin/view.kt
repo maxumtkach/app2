@@ -1,6 +1,7 @@
-open class View(val str: String) {
+open class View() {
 
-    open fun click(message: String) {
+    open fun click(message:String) {
+
 
         println("View clicked  :  $message")
     }

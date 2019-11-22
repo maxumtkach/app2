@@ -1,6 +1,6 @@
-class TextView(str: String) : View(str) {
+class TextView(val str: String) : View() {
 
-    override fun click(to: String) {
-        super.click(to)
+    override fun click(message: String) {
+        println(" str = $str")
     }
 }

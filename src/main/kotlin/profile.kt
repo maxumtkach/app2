@@ -1,3 +1,5 @@
+import java.lang.reflect.Array.get
+
 class Profile(
 
     val name: String,
@@ -5,10 +7,8 @@ class Profile(
     val id: Long = 1,
     val login: String = "max",
     var status: String = "activ",
-    var avatar: String = "avatar",
-    fullname: String = ""
+    var avatar: String = "avatar"
 ) {
 
-    var fullname: String = fullname
-        get() = "Имя : $name\nФамилия : $surname"
+    val fullname: String = "Имя : $name\nФамилия : $surname"
 }
