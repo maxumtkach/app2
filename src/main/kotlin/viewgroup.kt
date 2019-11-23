@@ -1,9 +1,8 @@
 class ViewGroup() : View() {
 
-    fun addView(view: View) {
-      //  val main = ViewGroup()
-        val view1 = view
+    var view: String = ""
 
-        //   println("View $view")
+    fun addView(view: View) {
+        this.view = view.toString()
     }
 }
